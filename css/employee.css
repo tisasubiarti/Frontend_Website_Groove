@@ -1,0 +1,643 @@
+/* CSS Tisa */
+:root {
+  --primary: #ffffff;
+  --bg: #18232c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #151515;
+  min-height: 4000px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 7%;
+  background-color: rgb(24, 35, 44);
+  border-bottom: 1.5px solid #151515;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  opacity: 0.6;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav {
+  font-size: 1rem;
+  color: var(--primary);
+  margin: 0 1rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav a {
+  font-size: 1rem;
+  color: var(--primary);
+  margin: 0 1.5rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #374259;
+}
+
+.navbar .navbar-nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .navbar-nav .dropdown .dropbtn {
+  color: var(--primary);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--bg);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-content a {
+  color: var(--primary);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  /* position: absolute; */
+}
+
+.navbar .navbar-nav .dropdown .dropdown-content a:hover {
+  color: #374259;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-content a::after {
+  color: rgb(30, 192, 54);
+}
+
+.navbar .navbar-nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* employee */
+
+.employee {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  /* margin-left: 7rem; */
+}
+
+.employee .content .content-utm {
+  width: 100%;
+  height: 700px;
+}
+
+.employee .content .content-utm #Gambarbck {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  min-height: 700px;
+  background-position: center;
+}
+
+.employee .content .content-utm .header {
+  width: 35%;
+  height: 150px;
+  position: absolute;
+  margin-left: 7rem;
+  margin-top: 6rem;
+}
+
+.employee .content .content-utm .header h1 {
+  color: #ffffff;
+  font-size: 3rem;
+  /* opacity: 0.7; */
+}
+
+.employee .content .content-utm .karir {
+  width: 50%;
+  height: 300px;
+  /* background-color: #374259; */
+  position: absolute;
+  margin-top: 20rem;
+  margin-left: 7rem;
+}
+
+.employee .content .content-utm .karir .search {
+  width: 53%;
+  height: 55px;
+  padding: 1rem 1rem;
+  border-radius: 80px;
+  display: block;
+  opacity: 0.7;
+}
+
+.employee .content .content-utm .karir .country {
+  width: 25%;
+  height: 50px;
+  padding: 1rem 1rem;
+  border-radius: 80px;
+  margin-top: 5rem;
+  opacity: 0.7;
+}
+
+.employee .content .content-utm .karir .city {
+  width: 25%;
+  height: 50px;
+  padding: 1rem 1rem;
+  border-radius: 80px;
+  /* margin-top: 5rem; */
+  margin-left: 1rem;
+  opacity: 0.7;
+}
+
+.employee .content .content-utm .karir .submit {
+  width: 20%;
+  height: 50px;
+  padding: 1rem 1rem;
+  border-radius: 80px;
+  margin-top: 5rem;
+  display: block;
+  /* opacity: 0.7; */
+  background-color: rgb(30, 192, 54);
+}
+
+.employee .content .content2 {
+  width: 100%;
+  height: 800px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.employee .content .content2 .header {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.employee .content .content2 .value {
+  width: 100%;
+  height: 690px;
+  /* background-color: #374259; */
+}
+
+.employee .content .content2 .value .gambar .gambar {
+  width: 100%;
+  height: 100px;
+  /* background-color: #374259; */
+  position: absolute;
+}
+
+.employee .content .content2 .value .gambar .gambar1 {
+  width: 7%;
+  height: 80px;
+  background-color: aqua;
+  display: inline-block;
+  margin-left: 12rem;
+  margin-top: 2rem;
+}
+
+.employee .content .content2 .value .gambar .gambar2 {
+  width: 7%;
+  height: 80px;
+  background-color: aqua;
+  display: inline-block;
+  margin-left: 30rem;
+}
+
+.employee .content .content2 .value .value1 {
+  width: 30%;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 70px;
+  /* border: 0.2rem solid black; */
+  display: inline-block;
+  /* margin-top: 6rem; */
+  margin-left: 7rem;
+  box-shadow: 0px 0px 5px rgba(21, 21, 21, 0.7);
+}
+
+.employee .content .content2 .value .value1 h1 {
+  font-size: 1rem;
+  margin-left: 3.5rem;
+  margin-top: 4rem;
+}
+
+.employee .content .content2 .value .value1 ul {
+  font-size: 0.8rem;
+  margin-left: 3.5rem;
+}
+
+.employee .content .content2 .value .value2 {
+  width: 30%;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 70px;
+  /* border: 0.2rem solid black; */
+  display: inline-block;
+  /* margin-top: 6rem; */
+  margin-left: 21rem;
+  box-shadow: 0px 0px 5px rgba(21, 21, 21, 0.7);
+}
+
+.employee .content .content2 .value .value2 h1 {
+  font-size: 1rem;
+  margin-left: 3.5rem;
+  margin-top: 4rem;
+}
+
+.employee .content .content2 .value .value2 ul {
+  font-size: 0.8rem;
+  margin-left: 3.5rem;
+}
+
+.employee .content .content2 .value .gambarke-2 {
+  width: 100%;
+  height: 100px;
+  /* background-color: #374259; */
+  position: absolute;
+}
+
+.employee .content .content2 .value .gambarke-2 .gambar3 {
+  width: 7%;
+  height: 80px;
+  background-color: aqua;
+  display: inline-block;
+  margin-left: 12rem;
+  margin-top: 2rem;
+}
+
+.employee .content .content2 .value .gambarke-2 .gambar4 {
+  width: 7%;
+  height: 80px;
+  background-color: aqua;
+  display: inline-block;
+  margin-left: 30rem;
+}
+
+.employee .content .content2 .value .value3 {
+  width: 30%;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 70px;
+  /* border: 0.2rem solid black; */
+  display: inline-block;
+  margin-top: 6rem;
+  margin-left: 7rem;
+  box-shadow: 0px 0px 5px rgba(21, 21, 21, 0.7);
+}
+
+.employee .content .content2 .value .value3 h1 {
+  font-size: 1rem;
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+}
+
+.employee .content .content2 .value .value3 ul {
+  font-size: 0.8rem;
+  margin-left: 3.5rem;
+}
+
+.employee .content .content2 .value .value4 {
+  width: 30%;
+  height: 200px;
+  background-color: #ffffff;
+  border-radius: 70px;
+  /* border: 0.2rem solid black; */
+  display: inline-block;
+  margin-top: 6rem;
+  margin-left: 21rem;
+  box-shadow: 0px 0px 5px rgba(21, 21, 21, 0.7);
+}
+
+.employee .content .content2 .value .value4 h1 {
+  font-size: 1rem;
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+}
+
+.employee .content .content2 .value .value4 ul {
+  font-size: 0.8rem;
+  margin-left: 3.5rem;
+}
+
+.employee .content .content2 .kontent {
+  width: 100%;
+  height: 700px;
+}
+
+.employee .content .content2 .kontent img {
+  width: 100%;
+  height: 700px;
+  /* position: absolute; */
+}
+
+.employee .content .content2 .content3 {
+  width: 100%;
+  height: 700px;
+  background-color: #ffffff;
+  position: absolute;
+}
+
+.employee .content .content2 .content3 h1 {
+  /* position: absolute; */
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.employee .content .content2 .content3 .container {
+  width: 100%;
+  height: 500px;
+  /* background-color: aqua; */
+  position: relative;
+  /* margin-top: 10rem; */
+}
+
+.employee .content .content2 .content3 .container .kotak1 {
+  width: 17%;
+  height: 370px;
+  background-color: rgb(102, 225, 120);
+  padding: 1rem 1rem 0rem 1rem;
+  margin-left: 7rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.employee .content .content2 .content3 .container .kotak1 h1 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.employee .content .content2 .content3 .container .kotak1 p {
+  margin: 1rem 0rem 0rem 1rem;
+}
+
+.employee .content .content2 .content3 .container .kotak2 {
+  width: 17%;
+  height: 370px;
+  background-color: aqua;
+  padding: 1rem 1rem 0rem 1rem;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+  display: inline-block;
+  position: absolute;
+}
+
+.employee .content .content2 .content3 .container .kotak2 h1 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.employee .content .content2 .content3 .container .kotak2 p {
+  margin: 1rem 0rem 0rem 1rem;
+}
+
+.employee .content .content2 .content3 .container .kotak3 {
+  width: 17%;
+  height: 370px;
+  background-color: rgb(181, 71, 165);
+  padding: 1rem 1rem 0rem 1rem;
+  margin-left: 25rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+  display: inline-block;
+  position: absolute;
+}
+
+.employee .content .content2 .content3 .container .kotak3 h1 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.employee .content .content2 .content3 .container .kotak3 p {
+  margin: 1rem 0rem 0rem 1rem;
+}
+
+.employee .content .content2 .content3 .container .kotak4 {
+  width: 17%;
+  height: 370px;
+  background-color: rgb(251, 255, 0);
+  padding: 1rem 1rem 0rem 1rem;
+  margin-left: 45rem;
+  margin-top: 3rem;
+  border-radius: 20px;
+  display: inline-block;
+  position: absolute;
+}
+
+.employee .content .content2 .content3 .container .kotak4 h1 {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.employee .content .content2 .content3 .container .kotak4 p {
+  margin: 1rem 0rem 0rem 1rem;
+}
+
+.employee .content .content2 .content3 .content4 {
+  width: 100%;
+  height: 1200px;
+  background-color: var(--bg);
+  /* background-color: aqua; */
+  position: absolute;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+.employee .content .content2 .content3 .content4 .header {
+  width: 100%;
+  height: 80px;
+  /* background-color: aqua; */
+  font-size: 2.7rem;
+  color: #ffffff;
+}
+
+.employee .content .content2 .content3 .content4 .container {
+  width: 100%;
+  height: 700px;
+  /* background-color: aqua; */
+  margin-top: 1rem;
+}
+
+.employee .content .content2 .content3 .content4 .container .atas {
+  width: 100%;
+  height: 300px;
+  /* background-color: bisque; */
+  margin-top: 1rem;
+}
+
+.employee .content .content2 .content3 .content4 .container .atas .gambar1 img {
+  width: 25%;
+  height: 300px;
+  background-color: aqua;
+  margin-left: 7rem;
+  /* display: inline-block; */
+  border-radius: 40px;
+  position: absolute;
+}
+
+.employee .content .content2 .content3 .content4 .container .atas .gambar2 img {
+  width: 35%;
+  height: 300px;
+  background-color: aqua;
+  margin-left: 32rem;
+  /* display: inline-block; */
+  border-radius: 40px;
+  position: absolute;
+}
+
+.employee .content .content2 .content3 .content4 .container .atas .gambar3 img {
+  width: 17%;
+  height: 300px;
+  background-color: aqua;
+  margin-left: 67rem;
+  display: inline-block;
+  border-radius: 40px;
+}
+
+.employee .content .content2 .content3 .content4 .container .tengah {
+  width: 100%;
+  height: 300px;
+  margin-top: 2rem;
+}
+
+.employee
+  .content
+  .content2
+  .content3
+  .content4
+  .container
+  .tengah
+  .gambar4
+  img {
+  width: 17%;
+  height: 300px;
+  background-color: aqua;
+  margin-left: 7rem;
+  display: inline-block;
+  border-radius: 40px;
+  position: absolute;
+}
+
+.employee
+  .content
+  .content2
+  .content3
+  .content4
+  .container
+  .tengah
+  .gambar5
+  img {
+  width: 17%;
+  height: 300px;
+  background-color: aqua;
+  margin-left: 25rem;
+  display: inline-block;
+  border-radius: 40px;
+  position: absolute;
+}
+
+.employee
+  .content
+  .content2
+  .content3
+  .content4
+  .container
+  .tengah
+  .gambar6
+  img {
+  width: 43%;
+  height: 300px;
+  background-color: aqua;
+  margin-left: 43rem;
+  display: inline-block;
+  border-radius: 40px;
+}
+
+.employee .content .content2 .content3 .content4 .container .akhir {
+  width: 100%;
+  height: 300px;
+  margin-top: 2rem;
+}
+
+.employee
+  .content
+  .content2
+  .content3
+  .content4
+  .container
+  .akhir
+  .gambar7
+  img {
+  width: 43%;
+  height: 300px;
+  background-color: aqua;
+  margin-left: 7rem;
+  display: inline-block;
+  border-radius: 40px;
+  position: absolute;
+}
+
+.employee
+  .content
+  .content2
+  .content3
+  .content4
+  .container
+  .akhir
+  .gambar8
+  img {
+  width: 17%;
+  height: 300px;
+  background-color: aqua;
+  margin-left: 49rem;
+  display: inline-block;
+  border-radius: 40px;
+  position: absolute;
+}
+
+.employee
+  .content
+  .content2
+  .content3
+  .content4
+  .container
+  .akhir
+  .gambar9
+  img {
+  width: 17%;
+  height: 300px;
+  background-color: aqua;
+  margin-left: 67rem;
+  display: inline-block;
+  border-radius: 40px;
+}

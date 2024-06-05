@@ -1,0 +1,333 @@
+/* CSS Tisa */
+:root {
+  --primary: #ffffff;
+  --bg: #18232c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #151515;
+  min-height: 1700px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.1rem 7%;
+  background-color: rgb(24, 35, 44);
+  border-bottom: 1.5px solid #151515;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  opacity: 0.6;
+}
+
+.navbar .navbar-logo {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav {
+  font-size: 1rem;
+  color: var(--primary);
+  margin: 0 1rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav a {
+  font-size: 1rem;
+  color: var(--primary);
+  margin: 0 1.5rem;
+  font-weight: 700;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #374259;
+}
+
+.navbar .navbar-nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar .navbar-nav .dropdown .dropbtn {
+  color: var(--primary);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--bg);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-content a {
+  color: var(--primary);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  /* position: absolute; */
+}
+
+.navbar .navbar-nav .dropdown .dropdown-content a:hover {
+  color: #374259;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-content a::after {
+  color: rgb(30, 192, 54);
+}
+
+.navbar .navbar-nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Event */
+.event {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  /* margin-left: 7rem; */
+}
+
+.event .content {
+  width: 100%;
+  height: 700px;
+  background-color: rgba(255, 255, 255);
+  opacity: 0.7;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.event .content .content-utm {
+  margin-top: 12rem;
+  width: 100%;
+  height: 100px;
+  /* background-color: aqua; */
+  position: absolute;
+}
+
+.event .content .content-utm h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.event .content .content-utm h4 {
+  text-align: center;
+}
+
+.event .content .content-utm .gambar {
+  width: 100%;
+  height: 425px;
+  /* background-color: aqua; */
+}
+
+.event .content .content-utm .gambar .gambar1 img {
+  width: 230px;
+  height: 400px;
+  object-fit: cover;
+  background-color: #374259;
+  display: inline-block;
+  margin-left: 2rem;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin-top: 1.5rem;
+  position: absolute;
+}
+
+.event .content .content-utm .gambar .gambar2 img {
+  width: 230px;
+  height: 350px;
+  object-fit: cover;
+  background-color: #374259;
+  display: inline-block;
+  border-radius: 30px;
+  margin-left: 17rem;
+  margin-top: 6rem;
+  position: absolute;
+}
+
+.event .content .content-utm .gambar .gambar3 img {
+  width: 230px;
+  height: 350px;
+  object-fit: cover;
+  background-color: #374259;
+  display: inline-block;
+  border-radius: 30px;
+  margin-left: 32rem;
+  margin-top: 10rem;
+  position: absolute;
+}
+
+.event .content .content-utm .gambar .gambar4 img {
+  width: 230px;
+  height: 350px;
+  object-fit: cover;
+  background-color: #374259;
+  display: inline-block;
+  border-radius: 30px;
+  margin-left: 47rem;
+  margin-top: 10rem;
+  position: absolute;
+}
+
+.event .content .content-utm .gambar .gambar5 img {
+  width: 230px;
+  height: 350px;
+  object-fit: cover;
+  background-color: #374259;
+  display: inline-block;
+  border-radius: 30px;
+  margin-left: 62rem;
+  margin-top: 6rem;
+  position: absolute;
+}
+
+.event .content .content-utm .gambar .gambar6 img {
+  width: 230px;
+  height: 400px;
+  object-fit: cover;
+  background-color: #374259;
+  display: inline-block;
+  margin-left: 77rem;
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  margin-top: 1.5rem;
+  position: absolute;
+}
+
+.event .content .content-utm .kontent-text {
+  width: 100%;
+  height: 250px;
+  background-color: var(--bg);
+  /* background-color: chartreuse; */
+  position: absolute;
+}
+
+.event .content .content-utm .kontent-text h4 {
+  margin-top: 3rem;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 20rem 3rem 20rem;
+  font-size: 1.2rem;
+}
+
+.event .content .formEvent {
+  width: 100%;
+  height: 700px;
+  margin-top: 20rem;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  background-color: #4fc0d0;
+  position: absolute;
+}
+
+.event .content .formEvent .header {
+  margin-top: 2rem;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.event .content .formEvent .form {
+  width: 60%;
+  height: 500px;
+  /* background-color: bisque; */
+  margin-top: 3rem;
+  margin-left: 26rem;
+}
+
+.event .content .formEvent .form .name {
+  width: 15%;
+  height: 30px;
+  margin-left: 7rem;
+  border-radius: 20px;
+  border: 0.5rem solid white;
+}
+
+.event .content .formEvent .form .email {
+  width: 15%;
+  height: 30px;
+  margin-left: 10rem;
+  border-radius: 20px;
+  border: 0.5rem solid white;
+}
+
+.event .content .formEvent .form .umur {
+  width: 15%;
+  height: 30px;
+  margin-left: 7rem;
+  border-radius: 20px;
+  border: 0.5rem solid white;
+  margin-top: 2rem;
+}
+
+.event .content .formEvent .form .gender {
+  margin-left: 7rem;
+  margin-top: 2rem;
+}
+
+.event .content .formEvent .form .alamat {
+  width: 15%;
+  height: 30px;
+  margin-left: 7rem;
+  border-radius: 20px;
+  border: 0.5rem solid white;
+  margin-top: 2rem;
+}
+
+.event .content .formEvent .form .kota {
+  width: 15%;
+  height: 30px;
+  margin-left: 10rem;
+  border-radius: 20px;
+  border: 0.5rem solid white;
+  margin-top: 2rem;
+}
+
+.event .content .formEvent .form .notelp {
+  width: 15%;
+  height: 30px;
+  margin-left: 7rem;
+  border-radius: 20px;
+  border: 0.5rem solid white;
+  margin-top: 2rem;
+}
+
+.event .content .formEvent .form .pesan {
+  width: 50%;
+  height: 100px;
+  margin-left: 7rem;
+  border-radius: 20px;
+  border: 0.5rem solid white;
+  margin-top: 2rem;
+}
+
+.event .content .formEvent .form .kirim {
+  width: 15%;
+  height: 30px;
+  margin-left: 7rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+  background-color: rgb(35, 255, 68);
+}
